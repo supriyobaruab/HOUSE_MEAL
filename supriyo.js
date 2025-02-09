@@ -32,7 +32,8 @@ s_submit.addEventListener('click',()=>{
     }
     srm_btn.addEventListener('click',()=>{
         s_submit.disabled = false;
-        st_count = 0;
+        st_count = sd_count;
+        
     })
     console.log(s_submit);
 
