@@ -1,3 +1,4 @@
+//Waly vai
 const wdcount  = document.querySelector(".daily-waly");
 const wtcount  = document.querySelector(".total-waly");
 

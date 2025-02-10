@@ -1,3 +1,4 @@
+//Supriyo
 const sdcount  = document.querySelector(".daily-supriyo");
 const stcount  = document.querySelector(".total-supriyo");
 

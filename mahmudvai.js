@@ -1,3 +1,4 @@
+//Mahmud vai
 const mdcount  = document.querySelector(".daily-mahmud");
 const mtcount  = document.querySelector(".total-mahmud");
 

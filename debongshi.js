@@ -1,3 +1,4 @@
+//Debongshi
 const ddcount  = document.querySelector(".daily-debongshi");
 const dtcount  = document.querySelector(".total-debongshi");
 
