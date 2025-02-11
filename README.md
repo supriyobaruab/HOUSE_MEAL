@@ -8,7 +8,7 @@ Managing meals as a bachelor can be a hassle, often requiring Excel sheets or te
 ### Clone the Repository
 
 ```bash
-  git clone https://github.com/supriyobaruab/HOUSE_MEAL.git
+git clone https://github.com/supriyobaruab/HOUSE_MEAL.git
 ```
 ### Install Dependencies
 - Using yarn
