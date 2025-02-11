@@ -1,5 +1,6 @@
 const url = "http://192.168.0.104:3000/supriyo";
 // Select elements
+const mealTrackerContainer = document.querySelector(".container");
 const sdcount = document.querySelector(".daily-supriyo");
 const stcount = document.querySelector(".total-supriyo");
 const sadd_btn = document.querySelector("#supriyo-add");
@@ -38,7 +39,8 @@ const getCall = async () => {
         }
     } catch (error) {
         console.error("Error fetching data:", error);
-        alert('Server is not running');
+        mealTrackerContainer.style.display = "none";
+        alert('Server is not running check the console log to check');
     }
 };
 
