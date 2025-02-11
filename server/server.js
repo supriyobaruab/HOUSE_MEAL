@@ -11,7 +11,7 @@ app.post('/', (req, res) => {
     console.log("Data received", req.body.Daily_count);
     supriyo_daily = req.body.Daily_count;
     supriyo_total = req.body.Total_count;
-    fs.writeFileSync('./supriyo.json', JSON.stringify({
+    fs.writeFileSync('./server/supriyo.json', JSON.stringify({
         supriyo_daily,
         supriyo_total,
     }));
@@ -21,7 +21,7 @@ app.post('/', (req, res) => {
     });
 });
 app.get('/', (req, res) => {
-    const data = JSON.parse(fs.readFileSync('./supriyo.json', 'utf8'));
+    const data = JSON.parse(fs.readFileSync('./server/supriyo.json', 'utf8'));
     res.json(data);
 });
 
