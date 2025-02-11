@@ -26,19 +26,10 @@ function getTodayDate() {
     return new Date().toISOString().split('T')[0];
 }
 
-// Load saved counts from localStorage
+// Load saved dates from localStorage
 const lastSubmittedDate1 = localStorage.getItem("lastSubmittedDate1");
 const todayDate1 = getTodayDate();
 
-// Counts from localStorage if available
-if (savedDailyCount !== null) {
-    sd_count = parseInt(savedDailyCount);
-    sdcount.innerHTML = sd_count;
-}
-if (savedTotalCount !== null) {
-    st_count = parseInt(savedTotalCount);
-    stcount.innerHTML = st_count;
-}
 
 //If the date is the same as the last submitted, disable submission
 if (lastSubmittedDate1 === todayDate1) {
