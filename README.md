@@ -29,6 +29,10 @@ git clone https://github.com/supriyobaruab/HOUSE_MEAL.git
 ```bash
   npm start
 ```
+### Demo
+<img width="642" alt="image" src="https://github.com/user-attachments/assets/1aa409c5-9f8d-468b-8123-97023818d7b9" />
+<img width="642" alt="image" src="https://github.com/user-attachments/assets/b2377c85-0ff7-4fd6-a4dd-5095eb2008d6" />
+<img width="642" alt="image" src="https://github.com/user-attachments/assets/06f21e1d-a572-4c38-bd08-0b3177c0af4c" />
 
 
 
