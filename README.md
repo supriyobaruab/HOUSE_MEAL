@@ -13,23 +13,21 @@ git clone https://github.com/supriyobaruab/HOUSE_MEAL.git
 ### Install Dependencies
 - Using yarn
 ```bash
-    yarn add express
-    yarn add cors
+    yarn install
 ```
 - Using npm
 ```bash
-    npm install express
-    npm install cors
+    npm install
 ```
 ### Customization
 
-- Update names and images in index.html as needed.
-- Open server.js inside the **server** folder and modify names or paths if necessary.
+- Update names and images in index.ejs as needed.
+- Open app.js inside that modify names or paths if necessary.
 
 ### Run the server
 
 ```bash
-  node ./server/server.js
+  npm start
 ```
 
 
