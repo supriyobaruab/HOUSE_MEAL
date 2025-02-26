@@ -6,8 +6,15 @@
     <title>Meal - Track your meal today!</title>
     <link rel="icon" href="/images/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="date_body">
+      <p class="date_text">Last Submitted date :</p>
+      <p class="date"></p>
+    </div>
     <div class="container">
       <!-- Supriyo-start-->
       <div class="person">
@@ -114,9 +121,21 @@
       </div>
       <!-- Walyvai-end -->
     </div>
+    <!-- Different section -->
     <div class="logg">
-    <button class="log">Meal logs<a href="/logs/logs.txt" download></a></button>
+    <button class="log">Meal logs<a href="/logs/logs.txt"></a></button>
+    <button class="calculate">Calculate</button>
     </div>
+    <div class="amount">
+      <p>Total amount</p> <p class="p"></p>
+    </div>
+    <div class="indivitual">
+      <p class="sup"></p>
+      <p class="deb"></p>
+      <p class="wal"></p>
+      <p class="mah"></p>
+    </div>
+    <script src="/script/calculate.js"></script>
     <script src="/script/supriyo.js"></script>
     <script src="/script/debongshi.js"></script>
     <script src="/script/walyvai.js"></script>

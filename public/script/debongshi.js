@@ -38,8 +38,6 @@ const getCall1 = async () => {
         }
     } catch (error) {
         console.error("Error fetching data:", error);
-        // mealTrackerContainer.style.display = "none";
-        alert('Server is not running check the console log to check');
     }
 };
 
@@ -66,13 +64,24 @@ drm_btn.addEventListener('click', () => {
 
 // Submit button
 d_submit.addEventListener('click', async () => {
-    if (dd_count < 2) {
-        let confirmSubmit1 = confirm("You had single/0 meal today, are you sure you want to submit?");
+    if (dd_count === 2) {
+        let confirmSubmit1 = confirm("You had 2 meal today, are you sure you want to submit?");
         if (!confirmSubmit1) {
             return;
         }
     }
-
+    else if (dd_count === 1) {
+        let confirmSubmit1 = confirm("You had 1 meal today, are you sure you want to submit?");
+        if (!confirmSubmit1) {
+            return;
+        }
+    }
+    else if (dd_count === 0) {
+        let confirmSubmit1 = confirm("You had no meal today, are you sure you want to submit?");
+        if (!confirmSubmit1) {
+            return;
+        }
+    }
     dt_count += dd_count;
     ddcount.innerHTML = 0;  // Reset daily count
     dtcount.innerHTML = dt_count;

@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67b94e18ef5469f814eedcca"
+  },
+  "name": "Supriyo",
+  "daily_count": 0,
+  "total_count": 1,
+  "date": "Tue Feb 25 2025",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b95b61958c65553f5ce093"
+  },
+  "name": "Debongshi",
+  "daily_count": 0,
+  "total_count": 1,
+  "date": "Tue Feb 25 2025",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b998c583310a25af8fcb97"
+  },
+  "name": "Mahmud",
+  "daily_count": 0,
+  "total_count": 1,
+  "date": "Tue Feb 25 2025",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b998d183310a25af8fcb99"
+  },
+  "name": "Waly",
+  "daily_count": 0,
+  "total_count": 1,
+  "date": "Tue Feb 25 2025",
+  "__v": 0
+}]

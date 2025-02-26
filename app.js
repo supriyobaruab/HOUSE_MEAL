@@ -2,6 +2,7 @@
 const express  = require('express');
 const mongoose = require('mongoose');
 const dotenv   = require('dotenv');
+const cors     = require('cors');
 // Import
 const errorHandler = require('./handlers/errorHandler');
 const commonRoute  = require('./routes/CommonRoute');
@@ -9,6 +10,7 @@ const commonRoute  = require('./routes/CommonRoute');
 const app = express();
 // Uses
 app.use(express.json());
+app.use(cors());
 dotenv.config();
 // Database configure
 const Database = async()=>{

@@ -38,8 +38,6 @@ const getCall2 = async () => {
         }
     } catch (error) {
         console.error("Error fetching data:", error);
-        // mealTrackerContainer.style.display = "none";
-        alert('Server is not running check the console log to check');
     }
 };
 
@@ -66,8 +64,20 @@ mrm_btn.addEventListener('click', () => {
 
 // Submit button
 m_submit.addEventListener('click', async () => {
-    if (md_count < 2) {
-        let confirmSubmit1 = confirm("You had single/0 meal today, are you sure you want to submit?");
+    if (md_count === 2) {
+        let confirmSubmit1 = confirm("You had 2 meal today, are you sure you want to submit?");
+        if (!confirmSubmit1) {
+            return;
+        }
+    }
+    else if (md_count === 1) {
+        let confirmSubmit1 = confirm("You had 1 meal today, are you sure you want to submit?");
+        if (!confirmSubmit1) {
+            return;
+        }
+    }
+    else if (md_count === 0) {
+        let confirmSubmit1 = confirm("You had no meal today, are you sure you want to submit?");
         if (!confirmSubmit1) {
             return;
         }

@@ -2,3 +2,8 @@ Name : "Supriyo",   Date: Sat Feb 22 2025, Daily Meals: 2, Total Meals: 14
 Name : "Debongshi", Date: Sat Feb 22 2025, Daily Meals: 2, Total Meals: 6
 Name : "Mahmud",    Date: Sat Feb 22 2025, Daily Meals: 2, Total Meals: 8
 Name : "Waly",      Date: Sat Feb 22 2025, Daily Meals: 2, Total Meals: 8
+Name : "Supriyo",   Date: Wed Feb 26 2025, Daily Meals: 2, Total Meals: 4
+Name : "Supriyo",   Date: Thu Feb 27 2025, Daily Meals: 2, Total Meals: 6
+Name : "Debongshi", Date: Thu Feb 27 2025, Daily Meals: 2, Total Meals: 3
+Name : "Mahmud",    Date: Thu Feb 27 2025, Daily Meals: 2, Total Meals: 3
+Name : "Waly",      Date: Thu Feb 27 2025, Daily Meals: 2, Total Meals: 3

@@ -6,6 +6,8 @@ const stcount = document.querySelector(".total-supriyo");
 const sadd_btn = document.querySelector("#supriyo-add");
 const srm_btn = document.querySelector("#supriyo-remove");
 const s_submit = document.querySelector("#supriyo-submit");
+const date     = document.querySelector(".date");
+
 
 // Counts
 let sd_count = 0;
@@ -38,6 +40,7 @@ const getCall = async () => {
             sadd_btn.disabled = false;
             srm_btn.disabled = false;
         }
+    date.innerHTML = lastSubmittedDate1;
     } catch (error) {
         console.error("Error fetching data:", error);
         // mealTrackerContainer.style.display = "none";
@@ -68,8 +71,20 @@ srm_btn.addEventListener('click', () => {
 
 // Submit button
 s_submit.addEventListener('click', async () => {
-    if (sd_count < 2) {
-        let confirmSubmit1 = confirm("You had single/0 meal today, are you sure you want to submit?");
+    if (sd_count === 2) {
+        let confirmSubmit1 = confirm("You had 2 meal today, are you sure you want to submit?");
+        if (!confirmSubmit1) {
+            return;
+        }
+    }
+    else if (sd_count === 1) {
+        let confirmSubmit1 = confirm("You had 1 meal today, are you sure you want to submit?");
+        if (!confirmSubmit1) {
+            return;
+        }
+    }
+    else if (sd_count === 0) {
+        let confirmSubmit1 = confirm("You had no meal today, are you sure you want to submit?");
         if (!confirmSubmit1) {
             return;
         }

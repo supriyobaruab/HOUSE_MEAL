@@ -1,7 +1,13 @@
 * {
   box-sizing: border-box;
 }
-
+.date_body{
+  display: flex;
+  gap: 2px;
+  font-family: "Poppins";
+  justify-content: flex-start;
+  padding-left: 20px;
+}
 .container {
   padding: 40px;
   width: 100%;
@@ -85,6 +91,10 @@ button::active {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+.calculate{
+cursor : pointer;
 }
 a {
   position: absolute;
@@ -93,6 +103,17 @@ a {
   outline: none;
   text-decoration: none;
   cursor: pointer;
+}
+.amount{
+  font-family: "Poppins";
+  padding-left: 20px ;
+  color: red;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.indivitual{
+  padding: 20px;
+  font-family: "Poppins";
 }
 /* Responsive styles */
 @media screen and (max-width: 1200px) {
