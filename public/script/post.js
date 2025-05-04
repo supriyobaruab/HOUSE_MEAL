@@ -1,6 +1,6 @@
 export async function postInfo(name, total_count, date) {
   try {
-    const res = await fetch("http://localhost:3000/info", {
+    const res = await fetch("https://countbites.tech/info", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

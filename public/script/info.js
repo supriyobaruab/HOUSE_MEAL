@@ -1,6 +1,6 @@
 export async function info() {
   try {
-    const response = await fetch("http://localhost:3000/info");
+    const response = await fetch("https://countbites.tech/info");
     if (!response.ok) {
       throw new Error("Failed to fetch");
     }
