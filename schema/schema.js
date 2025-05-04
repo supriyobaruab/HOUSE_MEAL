@@ -1,20 +1,17 @@
-const mongoose = require('mongoose');
-const schema   = new mongoose.Schema({
-    name :{
-        type : String,
-        required : true,
-    },
-    daily_count :{
-        type : Number,
-        required : true,
-    },
-    total_count :{
-        type : Number,
-        required : true,
-    },
-    date : {
-        type : String,
-        default : Date.now(),
-    }
+const mongoose = require("mongoose");
+const date = new Date().toISOString().split("T")[0];
+const schema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  total_count: {
+    type: Number,
+    required: true,
+  },
+  date: {
+    type: String,
+    default: date,
+  },
 });
-module.exports = schema;
+module.exports = mongoose.model("mealcounters", schema);

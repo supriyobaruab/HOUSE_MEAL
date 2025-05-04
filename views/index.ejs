@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meal - Track your meal today!</title>
     <link rel="icon" href="/images/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="date_body">
-      <p class="date_text">Last Submitted date :</p>
-      <p class="date"></p>
-    </div>
+    <header>
+      <div class="logo">
+        <h2>Count<span>bites</span></h2>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li id="contribute" >Contribute</li>
+          <li id="calculate" >Calculate</li>
+          <li id="log" >Logs</li>
+        </ul>
+      </div>
+    </header>
     <div class="container">
       <!-- Supriyo-start-->
       <div class="person">
         <div class="name">
           <h2 align="center">Supriyo</h2>
         </div>
-        <div>
+        <div class="lala">
             <img src="/images/Supriyo.jpg" class="image">
           </div>
           <div class="daily_total">
@@ -48,7 +56,7 @@
         <div class="name">
           <h2 align="center">Debongshi</h2>
         </div>
-        <div>
+        <div class="lala">
             <img src="/images/Debongshi.jpg" class="image">
         </div>
             <div class="daily_total">
@@ -74,7 +82,7 @@
         <div class="name">
           <h2 align="center">Mahmud vai</h2>
         </div>
-        <div>
+        <div class="lala">
             <img src="/images/Mahmudvai.jpg" class="image">
         </div>
             <div class="daily_total">
@@ -100,7 +108,7 @@
         <div class="name">
           <h2 align="center">Waly Vai</h2>
         </div>
-        <div>
+        <div class="lala">
             <img src="/images/Walyvai.jpg" class="image">
         </div>
              <div class="daily_total">
@@ -121,24 +129,7 @@
       </div>
       <!-- Walyvai-end -->
     </div>
-    <!-- Different section -->
-    <div class="logg">
-    <button class="log">Meal logs<a href="/logs/logs.txt"></a></button>
-    <button class="calculate">Calculate</button>
-    </div>
-    <div class="amount">
-      <p>Total amount</p> <p class="p"></p>
-    </div>
-    <div class="indivitual">
-      <p class="sup"></p>
-      <p class="deb"></p>
-      <p class="wal"></p>
-      <p class="mah"></p>
-    </div>
-    <script src="/script/calculate.js"></script>
-    <script src="/script/supriyo.js"></script>
-    <script src="/script/debongshi.js"></script>
-    <script src="/script/walyvai.js"></script>
-    <script src="/script/mahmudvai.js"></script>
+    <script type="module" src="./script/navbar.js"></script>
+    <script type="module" src="./script/main.js"></script>
   </body>
 </html>   
