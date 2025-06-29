@@ -1,135 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meal - Track your meal today!</title>
-    <link rel="icon" href="/images/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>CountBites</title>
   </head>
-  <body>
-    <header>
-      <div class="logo">
-        <h2>Count<span>bites</span></h2>
-      </div>
-      <div class="navbar">
-        <ul>
-          <li id="contribute" >Contribute</li>
-          <li id="calculate" >Calculate</li>
-          <li id="log" >Logs</li>
-        </ul>
-      </div>
-    </header>
-    <div class="container">
-      <!-- Supriyo-start-->
-      <div class="person">
-        <div class="name">
-          <h2 align="center">Supriyo</h2>
-        </div>
-        <div class="lala">
-            <img src="/images/Supriyo.jpg" class="image">
+  <header class="bg-gray-800 h-14 flex justify-left items-center">
+    <p class="text-md p-8 text-white">CountBites-Track your meal</p>
+  </header>
+  <body class="bg-gray-200">
+    <section class="max-w-screen-lg mx-auto px-4 w-full py-10">
+      <h1 class="flex justify-center text-3xl pb-6 font-bold">Meal Tracker</h1>
+      <!-- Card -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 w-full gap-6">
+        <!-- Supriyo -->
+        <div class="bg-white h-64 w-full rounded-xl">
+          <div class="p-8">
+            <div class="w-full">
+              <div class="flex items-center">
+                <div
+                  class="flex bg-[#4F46E5] text-white text-2xl w-[50px] h-[50px] rounded-full justify-center items-center"
+                >
+                  S
+                </div>
+                <div class="pl-3">
+                  <p class="text-xl font-bold">Supriyo</p>
+                  <p class="text-[14px] text-gray-500 mealup" id="supriyo">
+                    0 meals today
+                  </p>
+                </div>
+              </div>
+              <div class="pl-1 w-full">
+                <hr
+                  class="h-px w-full my-4 bg-gray-200 border-0 dark:bg-gray-700"
+                />
+              </div>
+              <div class="flex justify-between">
+                <div class="flex flex-col items-center">
+                  <p class="text-[#4F46E5] font-bold contribute" id="supriyo">
+                    ৳0
+                  </p>
+                  <p class="text-gray-500 text-[12px]">Contributed</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-[#4F46E5] font-bold meal" id="supriyo">0</p>
+                  <p class="text-gray-500 text-[12px]">Meal Taken</p>
+                </div>
+              </div>
+              <div class="pl-1 w-full">
+                <hr
+                  class="h-px w-full my-4 bg-gray-200 border-0 dark:bg-gray-700"
+                />
+              </div>
+              <div class="flex w-full justify-between">
+                <div>
+                  <button
+                    class="bg-[#4F46E5] hover:bg-white border border-[#4F46E5] w-20 h-9 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500 add_button"
+                    id="supriyo"
+                  >
+                    Add
+                  </button>
+                  <button
+                    class="bg-white hover:bg-[#4F46E5] border border-[#4F46E5] w-20 h-9 rounded-[4px] text-[14px] hover:text-white transition duration-500 remove_buttons"
+                    id="supriyo"
+                  >
+                    Remove
+                  </button>
+                </div>
+                <div>
+                  <button
+                    class="bg-green-700 hover:bg-white border border-green-700 w-20 h-9 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500 submit"
+                    id="supriyo"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="daily_total">
-            <p class="dailyt-supriyo">Daily</p>
-            <p class="totalt-supriyo">Total</p>
-          </div>
-        <div class="count">
-            <p class="daily-supriyo">0</p>
-            <p class="total-supriyo">0</p>
         </div>
-        <div class="button">
-            <button class="add" id="supriyo-add">Add</button>
-            <button class="remove" id="supriyo-remove">Remove</button>
-        </div>
-        <div class="submit">
-            <!-- <button class="undo" id="undo">Undo</button> -->
-            <button class="submitt" id="supriyo-submit">Submit</button>
-        </div>
-      </div>
-      <!-- Supriyo-end -->
 
-      <!-- Debongshi-start -->
-       <div class="person">
-        <div class="name">
-          <h2 align="center">Debongshi</h2>
-        </div>
-        <div class="lala">
-            <img src="/images/Debongshi.jpg" class="image">
-        </div>
-            <div class="daily_total">
-            <p class="dailyt-debongshi">Daily</p>
-            <p class="totalt-debongshi">Total</p>
+        <!-- Debongshi -->
+        <div class="bg-white h-64 w-full rounded-xl">
+          <div class="p-8">
+            <div class="w-full">
+              <div class="flex items-center">
+                <div
+                  class="flex bg-[#4F46E5] text-white text-2xl w-[50px] h-[50px] rounded-full justify-center items-center"
+                >
+                  D
+                </div>
+                <div class="pl-3">
+                  <p class="text-xl font-bold">Debongshi</p>
+                  <p class="text-[14px] text-gray-500 mealup" id="debongshi">
+                    0 meals today
+                  </p>
+                </div>
+              </div>
+              <div class="pl-1 w-full">
+                <hr
+                  class="h-px w-full my-4 bg-gray-200 border-0 dark:bg-gray-700"
+                />
+              </div>
+              <div class="flex justify-between">
+                <div class="flex flex-col items-center">
+                  <p class="text-[#4F46E5] font-bold contribute" id="debongshi">
+                    ৳0
+                  </p>
+                  <p class="text-gray-500 text-[12px]">Contributed</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-[#4F46E5] font-bold meal" id="debongshi">0</p>
+                  <p class="text-gray-500 text-[12px]">Meal Taken</p>
+                </div>
+              </div>
+              <div class="pl-1 w-full">
+                <hr
+                  class="h-px w-full my-4 bg-gray-200 border-0 dark:bg-gray-700"
+                />
+              </div>
+              <div class="flex w-full justify-between">
+                <div>
+                  <button
+                    class="bg-[#4F46E5] hover:bg-white border border-[#4F46E5] w-20 h-9 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500 add_button"
+                    id="debongshi"
+                  >
+                    Add
+                  </button>
+                  <button
+                    class="bg-white hover:bg-[#4F46E5] border border-[#4F46E5] w-20 h-9 rounded-[4px] text-[14px] hover:text-white transition duration-500 remove_buttons"
+                    id="debongshi"
+                  >
+                    Remove
+                  </button>
+                </div>
+                <div>
+                  <button
+                    class="bg-green-700 hover:bg-white border border-green-700 w-20 h-9 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500 submit"
+                    id="debongshi"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        <div class="count">
-            <p class="daily-debongshi">0</p>
-            <p class="total-debongshi">0</p>
         </div>
-        <div class="button">
-            <button class="add" id="debongshi-add">Add</button>
-            <button class="remove" id="debongshi-remove">Remove</button>
-        </div>
-        <div class="submit">
-            <button class="submitt" id="debongshi-submit">Submit</button>
-        </div>
-      </div>
-      <!-- Debongshi-end -->
 
-      <!-- Mahmudvai-start -->
-        <div class="person">
-        <div class="name">
-          <h2 align="center">Mahmud vai</h2>
-        </div>
-        <div class="lala">
-            <img src="/images/Mahmudvai.jpg" class="image">
-        </div>
-            <div class="daily_total">
-            <p class="dailyt-mahmud">Daily</p>
-            <p class="totalt-mahmud">Total</p>
+        <!-- Waly -->
+        <div class="bg-white h-64 w-full rounded-xl">
+          <div class="p-8">
+            <div class="w-full">
+              <div class="flex items-center">
+                <div
+                  class="flex bg-[#4F46E5] text-white text-2xl w-[50px] h-[50px] rounded-full justify-center items-center"
+                >
+                  W
+                </div>
+                <div class="pl-3">
+                  <p class="text-xl font-bold">Waly</p>
+                  <p class="text-[14px] text-gray-500 mealup" id="waly">
+                    0 meals today
+                  </p>
+                </div>
+              </div>
+              <div class="pl-1 w-full">
+                <hr
+                  class="h-px w-full my-4 bg-gray-200 border-0 dark:bg-gray-700"
+                />
+              </div>
+              <div class="flex justify-between">
+                <div class="flex flex-col items-center">
+                  <p class="text-[#4F46E5] font-bold contribute" id="waly">
+                    ৳0
+                  </p>
+                  <p class="text-gray-500 text-[12px]">Contributed</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-[#4F46E5] font-bold meal" id="waly">0</p>
+                  <p class="text-gray-500 text-[12px]">Meal Taken</p>
+                </div>
+              </div>
+              <div class="pl-1 w-full">
+                <hr
+                  class="h-px w-full my-4 bg-gray-200 border-0 dark:bg-gray-700"
+                />
+              </div>
+              <div class="flex w-full justify-between">
+                <div>
+                  <button
+                    class="bg-[#4F46E5] hover:bg-white border border-[#4F46E5] w-20 h-9 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500 add_button"
+                    id="waly"
+                  >
+                    Add
+                  </button>
+                  <button
+                    class="bg-white hover:bg-[#4F46E5] border border-[#4F46E5] w-20 h-9 rounded-[4px] text-[14px] hover:text-white transition duration-500 remove_buttons"
+                    id="waly"
+                  >
+                    Remove
+                  </button>
+                </div>
+                <div>
+                  <button
+                    class="bg-green-700 hover:bg-white border border-green-700 w-20 h-9 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500 submit"
+                    id="waly"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        <div class="count">
-            <p class="daily-mahmud">0</p>
-            <p class="total-mahmud">0</p>
         </div>
-        <div class="button">
-            <button class="add" id="mahmud-add">Add</button>
-            <button class="remove" id="mahmud-remove">Remove</button>
-        </div>
-        <div class="submit">
-            <button class="submitt" id="mahmud-submit">Submit</button>
-        </div>
-      </div>
-      <!-- Mahmudvai-end -->
 
-      <!-- Walyvai-start -->
-        <div class="person">
-        <div class="name">
-          <h2 align="center">Waly Vai</h2>
-        </div>
-        <div class="lala">
-            <img src="/images/Walyvai.jpg" class="image">
-        </div>
-             <div class="daily_total">
-            <p class="dailyt-waly">Daily</p>
-            <p class="totalt-waly">Total</p>
+        <!-- Mahmud -->
+        <div class="bg-white h-64 w-full rounded-xl">
+          <div class="p-8">
+            <div class="w-full">
+              <div class="flex items-center">
+                <div
+                  class="flex bg-[#4F46E5] text-white text-2xl w-[50px] h-[50px] rounded-full justify-center items-center"
+                >
+                  M
+                </div>
+                <div class="pl-3">
+                  <p class="text-xl font-bold">Mahmud</p>
+                  <p class="text-[14px] text-gray-500 mealup" id="mahmud">
+                    0 meals today
+                  </p>
+                </div>
+              </div>
+              <div class="pl-1 w-full">
+                <hr
+                  class="h-px w-full my-4 bg-gray-200 border-0 dark:bg-gray-700"
+                />
+              </div>
+              <div class="flex justify-between">
+                <div class="flex flex-col items-center">
+                  <p class="text-[#4F46E5] font-bold contribute" id="mahmud">
+                    ৳0
+                  </p>
+                  <p class="text-gray-500 text-[12px]">Contributed</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-[#4F46E5] font-bold meal" id="mahmud">0</p>
+                  <p class="text-gray-500 text-[12px]">Meal Taken</p>
+                </div>
+              </div>
+              <div class="pl-1 w-full">
+                <hr
+                  class="h-px w-full my-4 bg-gray-200 border-0 dark:bg-gray-700"
+                />
+              </div>
+              <div class="flex w-full justify-between">
+                <div>
+                  <button
+                    class="bg-[#4F46E5] hover:bg-white border border-[#4F46E5] w-20 h-9 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500 add_button"
+                    id="mahmud"
+                  >
+                    Add
+                  </button>
+                  <button
+                    class="bg-white hover:bg-[#4F46E5] border border-[#4F46E5] w-20 h-9 rounded-[4px] text-[14px] hover:text-white transition duration-500 remove_buttons"
+                    id="mahmud"
+                  >
+                    Remove
+                  </button>
+                </div>
+                <div>
+                  <button
+                    class="bg-green-700 hover:bg-white border border-green-700 w-20 h-9 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500 submit"
+                    id="mahmud"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        <div class="count">
-            <p class="daily-waly">0</p>
-            <p class="total-waly">0</p>
-        </div>
-        <div class="button">
-            <button class="add" id="waly-add">Add</button>
-            <button class="remove" id="waly-remove">Remove</button>
-        </div>
-        <div class="submit">
-            <button class="submitt" id="waly-submit">Submit</button>
         </div>
       </div>
-      <!-- Walyvai-end -->
-    </div>
-    <script type="module" src="./script/navbar.js"></script>
-    <script type="module" src="./script/main.js"></script>
+      <!-- Contribution -->
+      <div class="bg-white h-58 w-full rounded-xl my-4 p-8">
+        <p class="text-2xl pb-2 font-bold">Contribution</p>
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-6 py-4 justify-between">
+            <select
+              name="persons"
+              id="person"
+              class="p-2 border border-1 border-gray-300 h-10 rounded-sm w-[130px] shadow-md"
+            >
+              <option value="supriyo">Supriyo</option>
+              <option value="debongshi">Debongshi</option>
+              <option value="waly">Waly vai</option>
+              <option value="mahmud">Mahmud vai</option>
+            </select>
+            <input
+              class="p-4 border border-1 border-gray-300 h-10 rounded-sm w-32"
+              type="number"
+              placeholder="৳ Amount"
+              id="input"
+            />
+          </div>
+          <div class="flex flex-row gap-6 justify-between">
+            <button
+              class="bg-green-700 hover:bg-white border border-green-700 w-32 h-10 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500"
+              id="ctbe"
+            >
+              Contribute
+            </button>
+            <button
+              class="bg-red-700 hover:bg-white border border-red-700 w-32 h-10 rounded-[4px] text-white text-[14px] hover:text-black transition duration-500"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="bg-white w-full rounded-xl my-4 p-8 pt-10">
+        <div class="flex flex-row justify-between">
+          <div class="h-full flex flex-col gap-1">
+            <p>Total Meals Taken :</p>
+          </div>
+          <div class="h-full flex flex-col gap-1">
+            <p id="total_meal">0</p>
+          </div>
+        </div>
+
+        <hr class="h-px w-full my-4 border border-gray-300" />
+
+        <div class="flex flex-row justify-between">
+          <div class="h-full flex flex-col gap-1">
+            <p>Total Contribution :</p>
+          </div>
+          <div class="h-full flex flex-col gap-1">
+            <p id="total_contribution">৳0</p>
+          </div>
+        </div>
+
+        <hr class="h-px w-full my-4 border border-gray-300" />
+
+        <div class="flex flex-row justify-between">
+          <div class="h-full flex flex-col gap-1">
+            <p class="text-md text-blue-700 font-bold">Meal Rate :</p>
+          </div>
+          <div class="h-full flex flex-col gap-1">
+            <p class="text-md text-blue-700 font-bold" id="rate">৳0/Meal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="./app.js"></script> -->
+    <script type="module" src="./contribute.js"></script>
+    <script type="module" src="./log.js"></script>
   </body>
-</html>   
+</html>

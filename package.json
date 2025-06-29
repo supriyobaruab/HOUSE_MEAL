@@ -1,22 +1,22 @@
 {
-  "name": "house_meal_tracker",
+  "name": "meal",
   "version": "1.0.0",
-  "description": "A website that stores the value of meal count",
-  "license": "ISC",
-  "author": "Supriyo Barua Shaown",
-  "type": "commonjs",
-  "main": "app.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
+    "dotenv": "^17.0.0",
     "ejs": "^3.1.10",
-    "express": "^4.21.2",
-    "fs": "^0.0.1-security",
-    "mongoose": "^8.10.1",
-    "nodemon": "^3.1.9",
-    "nohup": "^0.1.0"
+    "express": "^5.1.0",
+    "mongoose": "^8.16.1",
+    "nodemon": "^3.1.10"
   }
 }
