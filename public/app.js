@@ -1,4 +1,4 @@
-export const url = "http://192.168.0.104:3000";
+export const url = "https://new.countbites.tech";
 
 const add_buttons = document.querySelectorAll(".add_button");
 const remove_buttons = document.querySelectorAll(".remove_buttons");
