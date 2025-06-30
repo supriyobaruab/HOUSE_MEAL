@@ -7,9 +7,23 @@ async function api(req, res) {
     const peopleResults = [];
     const contributionResults = [];
 
+    const todayDate = new Date().toISOString().split("T")[0];
+
     for (const name of names) {
       const latestPerson = await people.findOne({ name }).sort({ _id: -1 });
       if (latestPerson) {
+        let lastDateFormatted = "";
+        if (latestPerson.lastDate) {
+          const d = new Date(latestPerson.lastDate);
+          lastDateFormatted = d.toISOString().split("T")[0];
+        }
+
+        if (lastDateFormatted !== todayDate) {
+          latestPerson.today = 0;
+          latestPerson.submittedToday = false;
+          latestPerson.lastDate = todayDate;
+        }
+
         peopleResults.push(latestPerson);
       }
 
